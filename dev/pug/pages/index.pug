@@ -1,0 +1,9 @@
+extends ../templates/main
+
+block variables
+  - var title = 'Главная страница'
+  - var pageClass = 'index-page'
+
+block content
+  each item in nav.navPages
+    div= item
