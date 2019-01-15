@@ -4,10 +4,11 @@ global.$ = {
     gulp: require('gulp'),
     del: require('del'),
     fs: require('fs'),
+    prettify: require('gulp-html-prettify'),
     browserSync: require('browser-sync').create(),
     gp: require('gulp-load-plugins')()
 };
-$.tasks.forEach(function(taskPath) {
+$.tasks.forEach(function (taskPath) {
     require(taskPath)();
 });
 $.gulp.task('dev', $.gulp.series(
