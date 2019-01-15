@@ -13,11 +13,11 @@ $.tasks.forEach(function (taskPath) {
 });
 $.gulp.task('dev', $.gulp.series(
     'clean',
-    $.gulp.parallel('vendor:dev', 'scss:dev', 'js:dev', 'fonts', 'img:dev', 'pug')));
+    $.gulp.parallel('libs:dev', 'scss:dev', 'js:dev', 'fonts', 'img:dev', 'pug')));
 
 $.gulp.task('build', $.gulp.series(
     'clean',
-    $.gulp.parallel('vendor:build', 'scss:build', 'js:build', 'fonts', 'img:build', 'pug')));
+    $.gulp.parallel('libs:build', 'scss:build', 'js:build', 'fonts', 'img:build', 'pug')));
 
 $.gulp.task('default', $.gulp.series(
     'dev',

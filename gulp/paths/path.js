@@ -5,11 +5,11 @@ module.exports = {
         js: './build/template/js/',
         img: './build/template/images/',
         fonts: './build/template/fonts/',
-        vendor: './build/template/vendor/'
+        libs: './build/template/libs/'
     },
     src: {
         js: './dev/template/js/**/*.js',
-        vendor: './dev/vendor/**/*.*',
+        libs: './dev/libs/**/*.*',
         fonts: './dev/static/fonts/**/*.*',
         img: './dev/template/img/**/*.{png,jpg,gif}',
         pug: './dev/pug/pages/*.pug',

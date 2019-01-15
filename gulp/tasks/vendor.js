@@ -1,13 +1,13 @@
 module.exports = function () {
-    $.gulp.task('vendor:dev', function () {
-        return $.gulp.src($.path.src.vendor)
-            .pipe($.gulp.dest($.path.build.vendor))
+    $.gulp.task('libs:dev', function () {
+        return $.gulp.src($.path.src.libs)
+            .pipe($.gulp.dest($.path.build.libs))
             .pipe($.browserSync.reload({
                 stream: true
             }));
     });
-    $.gulp.task('vendor:build', function () {
-        return $.gulp.src($.path.src.vendor)
-            .pipe($.gulp.dest($.path.build.vendor))
+    $.gulp.task('libs:build', function () {
+        return $.gulp.src($.path.src.libs)
+            .pipe($.gulp.dest($.path.build.libs))
     });
 };
